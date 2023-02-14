@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055,#7597de);
+}
+header{
+    padding: 3% 7%;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header UL{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header ul li{
+    margin-left: 20px;
+    list-style: none;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+header ul li:hover{
+    color: #2b1055;
+    background-color: #fff;
+    
+}
+header ul .home{
+    color: #2b1055;
+    background-color: #fff;
+}
+/* ------------------section---------------------- */
+ 
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    
+}
+section img#moon{
+    
+     mix-blend-mode: screen; 
+}
+section #text{
+    position: absolute;
+    color: #fff;
+    font-size: 7vw;
+    right: -40%;
+    z-index: 9;
+}
+section #btn{
+    background-color: #fff;
+    color: #2b1055;
+    padding: 8px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+
+}
+section #mountainsf{
+    z-index: 10;
+}
+
+
+/* ------------------section---------------------- */
+.sec{
+    background-color: #1c0522;
+    padding: 7% 5%;
+}
+.sec h2{
+    color: #fff;
+    font-size: 2em;
+}
+.sec p{
+    color: #fff;
+    font-size: 1.2em;
+}
+
